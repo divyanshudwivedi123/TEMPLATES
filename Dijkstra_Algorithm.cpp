@@ -1,7 +1,7 @@
 // Template for Dijkstra algorithm
 
 /*
-Used to find shortest path from the source node to all other nodes of the graph.
+Used to find shortest path from the source node to all other nodes of the graph(both weighted and unweighted).
 BFS + Priority_Queue(Heap) == Dijkstra Algorithm
 
 
@@ -17,6 +17,16 @@ BFS + Priority_Queue(Heap) == Dijkstra Algorithm
 
 => Repeat the process until the heap is not empty.
 
+*/
+
+
+/*
+WHEN DIJKSTRA DOES NOT WORK:
+
+=> If there is any negative weight present in the graph bcoz it will get stuck into infinite loop.
+=> Time complexity : For adjacency list :  (V + E) log V , For adjacency matrix : O(V^2) , 
+E = no of edges, V = no of nodes or vertices.
+=> Space complexity : O(V)
 */
 
 // CODE
